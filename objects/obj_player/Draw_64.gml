@@ -1,0 +1,1 @@
+f_draw_text_font(10, 10, $"Health: {health_current}\nIs Attacking: {is_attacking}\n{do_attack_cooldown}", 1);

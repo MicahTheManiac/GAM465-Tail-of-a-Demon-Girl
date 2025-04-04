@@ -1,0 +1,1 @@
+f_draw_text_font(x, y, text, size, color, valign, halign);

@@ -38,7 +38,7 @@ function f_implement_ai_behavior()
 function f_ai_check_for_target(_target, _range)
 {
 	var _tc = collision_circle(x, y, _range, _target, false, false);
-	if (_target != noone) and (instance_exists(_target)) and (_tc)
+	if (_target != noone) and (instance_exists(_target)) and (_tc) and (!_target.is_dead)
 	{
 		// Return True: We Have Target
 		return true;

@@ -53,7 +53,7 @@ if (do_entity_collision) and (place_meeting(x, y + speed_y * 1.1, obj_pawn_entit
 }
 
 // Kill if below Level
-if (y > room_height)
+if (y > room_height) and (!is_dead)
 {
 	health_current = 0;
 }

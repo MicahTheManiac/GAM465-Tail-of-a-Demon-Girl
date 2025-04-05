@@ -16,7 +16,7 @@ view_height = BASE_HEIGHT;
 // Scaling -- Use scale_base if we need to separate scales for calculations
 //	scale_base = BASE_SCALE
 scale_window = BASE_SCALE;
-//if (HTML_BUILD) scale_window = 2;
+if (display_get_width() <= 1920) scale_window = 2;
 
 // Camera Target
 target = obj_player;

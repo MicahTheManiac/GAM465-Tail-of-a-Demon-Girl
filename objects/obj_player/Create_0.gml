@@ -12,10 +12,11 @@ sprites =
 			spr_player_jump,
 			spr_player_jump_dir,
 			spr_player_walk,
+			spr_player_halo
 		];
 
-health_current = 25;
-health_max = 25;
+health_current = 20;
+health_max = 20;
 
 var _frame_quotient = sprite_get_speed(spr_player_attack) div (sprite_get_number(spr_player_attack) - 1);
 timer_attack_frames = (game_get_speed(gamespeed_fps) div _frame_quotient);
@@ -23,3 +24,5 @@ timer_death_seconds_start = 3;
 timer_death_seconds = timer_death_seconds_start;
 timer_death_ticks = game_get_speed(gamespeed_fps);
 timer_hit_cooldown = timer_hit_ticks * 2;
+
+halo_alpha = 0;

@@ -13,7 +13,7 @@ state = AI_STATE.IDLE;
 speed_x = 0;
 speed_y = 0;
 speed_grav = GRAVITY_SPEED;
-speed_move = 1;
+speed_move = 0.5;
 roam_x = xstart;
 
 sprites = [];

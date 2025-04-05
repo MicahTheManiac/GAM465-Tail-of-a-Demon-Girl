@@ -6,17 +6,17 @@ image_xscale = 1;
 image_yscale = 1;
 
 // Movement Animations
-if (is_on_ground) and (!is_hit)
+if (is_on_ground)
 {
 	// If we are Moving
-	if (speed_x != 0) and (!is_attacking)
+	if (speed_x != 0) and (!is_attacking) and (!is_hit)
 	{
 		sprite_index = spr_player_walk;
 		image_xscale = clamp(speed_x, -1, 1);
 	}
 	
 	// If we are Idle
-	if (speed_x == 0) and (!is_attacking)
+	if (speed_x == 0) and (!is_attacking) and (!is_hit)
 	{
 		sprite_index = spr_player_idle;
 	}
@@ -57,7 +57,7 @@ else if (!is_on_ground) and (!is_hit)
 	}
 }
 
-if (is_hit) and ((!is_attacking) or (do_attack_cooldown))
+if (is_hit) and (!is_attacking)
 {
 	sprite_index = spr_player_hit;
 }
@@ -71,3 +71,7 @@ else
 {
 	image_alpha = 0;
 }
+
+// Halo
+var _alpha = clamp(halo_alpha / 100, 0, 1);
+draw_sprite_ext(spr_player_halo, 0, x, y, 1, 1, 0, c_white, _alpha);

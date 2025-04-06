@@ -1,7 +1,7 @@
 event_inherited();
 
 var _entity = collision_circle(x, y + 4, 9, obj_pawn_entity, false, true);
-if (_entity)
+if (_entity) and (_entity.object_index != obj_scorpion)
 {
 	speed_x = _entity.speed_x * 1.2;
 }

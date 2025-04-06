@@ -1,0 +1,1 @@
+/// @desc Do not draw on World

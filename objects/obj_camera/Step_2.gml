@@ -23,5 +23,4 @@ else
 	var _x = (room_width / 2) - (view_width / 2);
 	var _y = (room_height / 2) - (view_height / 2);
 	camera_set_view_pos(VIEW, _x, _y);
-	if (room == rm_map_editor) target = obj_mover_camera;
 }

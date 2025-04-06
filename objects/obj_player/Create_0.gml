@@ -26,3 +26,4 @@ timer_death_ticks = game_get_speed(gamespeed_fps);
 timer_hit_cooldown = timer_hit_ticks * 2;
 
 halo_alpha = 0;
+deaths = 0;

@@ -65,11 +65,11 @@ if (is_attacking) and (!is_dead) and (is_on_ground)
 	timer_attack -= 1;
 	
 	var _atk_dir = (attack_direction * 90) - 90;
-	var _ax = x + lengthdir_x(attack_range, _atk_dir);
-	var _ay = y + lengthdir_y(attack_range, _atk_dir);
+	var _ax = x + lengthdir_x(attack_range * 1.2, _atk_dir);
+	var _ay = y + lengthdir_y(attack_range * 1.2, _atk_dir);
 	var _h = sprite_height / 2;
 	//	var _entity = collision_line(x, y, _ax, _ay, obj_pawn_entity, false, true);
-	var _entity = collision_rectangle(x, y - _h, _ax, y + _h, obj_pawn_entity, false, true);
+	var _entity = collision_rectangle(x, y - (_h * 2), _ax, y + _h, obj_pawn_entity, false, true);
 	if (_entity) and (!do_attack_cooldown)
 	{
 		_entity.f_do_damage(other.damge_dealt);

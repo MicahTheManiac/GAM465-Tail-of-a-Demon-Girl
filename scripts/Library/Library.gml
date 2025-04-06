@@ -38,3 +38,16 @@ function f_swap_bool(_bool)
 	if !_bool return true;
 	if _bool return false;
 }
+
+// Button Test
+function f_button_test()
+{
+	show_debug_message(" > Button Working")
+}
+
+// Swap Controls
+function f_button_swap_keys()
+{
+	global.do_swap_controls = f_swap_bool(global.do_swap_controls);
+	room_restart();
+}

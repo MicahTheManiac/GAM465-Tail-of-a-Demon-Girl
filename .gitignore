@@ -86,3 +86,6 @@ spr_portal/
 /sprites/spr_player_dead
 /sprites/spr_player_attack
 sprites/spr_player_attack/spr_player_attack.yy
+/sprites/spr_scorpion_walk
+/sprites/spr_scorpion_idle
+/sprites/spr_scorpion_attack

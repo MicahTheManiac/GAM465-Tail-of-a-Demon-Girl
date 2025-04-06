@@ -66,6 +66,7 @@ if (_attack != 0) and (!is_attacking) and (is_on_ground) and (!_key_up)
 if (health_current <= 0) and (!is_dead)
 {
 	is_dead = true;
+	deaths += 1;
 	instance_create_layer(x, y + 10, "InstancesPlayer", obj_corpse);
 }
 

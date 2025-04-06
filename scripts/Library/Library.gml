@@ -11,6 +11,7 @@
 global.window_width = 0;
 global.window_height = 0;
 global.do_swap_controls = false;
+global.levels_complete = [];
 
 // Font Func
 function f_draw_text_font(x, y, _text, _size = 1, _color = c_white, _valign = fa_top, _halign = fa_left, _font = fnt_silver){

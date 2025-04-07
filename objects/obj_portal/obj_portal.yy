@@ -26,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"room_to_load","filters":[],"listItems":[],"multiselect":false,"name":"room_to_load","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_hub","path":"rooms/rm_hub/rm_hub.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_hub","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"level_to_load","filters":[],"listItems":[],"multiselect":false,"name":"level_to_load","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_hub","path":"rooms/rm_hub/rm_hub.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_hub","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,0 +1,1 @@
+timer_ticks = 14;

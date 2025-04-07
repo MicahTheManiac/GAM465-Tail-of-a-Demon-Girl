@@ -1,3 +1,3 @@
 event_inherited();
 
-damge_dealt = 15;
+damge_dealt = 10;

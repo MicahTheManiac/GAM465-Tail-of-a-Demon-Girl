@@ -16,15 +16,24 @@ if (place_meeting(x + speed_x * 1.1, y, _tl_main))
 	}
 	speed_x = 0;
 }
-
+//	-	Block Collision on Top and Bottom
 if (place_meeting(x, y + speed_y * 1.1, _tl_main))
 {
 	while (!place_meeting(x, y + sign(speed_y), _tl_main))
 	{
 		y += sign(speed_y);
 	}
-	speed_y = 0;
-	is_on_ground = true;
+	
+	// Checking if going down (+)
+	if (speed_y > 0)
+	{
+		speed_y = 0;
+		is_on_ground = true;
+	}
+	else
+	{
+		speed_y = 0;
+	}
 }
 else
 {
@@ -41,8 +50,8 @@ if (do_entity_collision) and (place_meeting(x + speed_x * 1.1, y, obj_pawn_entit
 	speed_x = 0;
 }
 
-
-if (do_entity_collision) and (place_meeting(x, y + speed_y * 1.1, obj_pawn_entity))
+//	-	Allows clipping through underneath entities
+if (do_entity_collision) and (place_meeting(x, y + speed_y, obj_pawn_entity)) and (speed_y > 0)
 {
 	while (!place_meeting(x, y + sign(speed_y), obj_pawn_entity))
 	{

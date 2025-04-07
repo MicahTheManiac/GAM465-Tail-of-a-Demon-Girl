@@ -155,5 +155,6 @@ function f_ai_state_attack()
 function f_ai_state_die()
 {
 	is_dead = true;
+	instance_create_layer(x, y, "Instances", obj_smoke);
 	instance_destroy(id);
 }

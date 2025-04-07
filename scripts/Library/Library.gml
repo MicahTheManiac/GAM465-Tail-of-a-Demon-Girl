@@ -52,3 +52,39 @@ function f_button_swap_keys()
 	global.do_swap_controls = f_swap_bool(global.do_swap_controls);
 	room_restart();
 }
+
+// Check Deaths
+function f_check_deaths_under_allowed()
+{
+	with (obj_player)
+	{
+		if (allowed_deaths != -1)
+		{
+			if (deaths <= allowed_deaths)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return true;
+		}
+	}
+}
+
+// Draw a Message to Screen
+function f_show_message(_text, _t_sec = 2)
+{
+	if (instance_exists(obj_game_manager))
+	{
+		with (obj_game_manager)
+		{
+			text = _text;
+			timer_ticks = game_get_speed(gamespeed_fps * _t_sec);
+		}
+	}
+}

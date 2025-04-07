@@ -25,6 +25,7 @@ if (_key_restart) and (!_key_menu)
 	if (halo_alpha >= 120)
 	{
 		halo_alpha = 0;
+		deaths = 0;
 		room_restart();
 	}
 }
@@ -77,7 +78,7 @@ if (is_dead)
 	speed_y = 0;
 	
 	// Prevent Restart or Exit
-	halo_alpha = 0;
+	//halo_alpha = 0;
 	
 	// Countdown Death Timer
 	timer_death_ticks -= 1;
@@ -91,7 +92,7 @@ if (is_dead)
 	}
 	
 	// If Seconds are Zero
-	if (timer_death_seconds <= 0)
+	if (timer_death_seconds <= 0) and (f_check_deaths_under_allowed())
 	{
 		x = xstart;
 		y = ystart;

@@ -77,14 +77,24 @@ function f_check_deaths_under_allowed()
 }
 
 // Draw a Message to Screen
-function f_show_message(_text, _t_sec = 2)
+function f_show_message(_text, _t_sec = 2, _is_warning = true)
 {
 	if (instance_exists(obj_game_manager))
 	{
 		with (obj_game_manager)
 		{
 			text = _text;
-			timer_ticks = game_get_speed(gamespeed_fps * _t_sec);
+			timer_ticks = game_get_speed(gamespeed_fps) * _t_sec;
+			if (_is_warning)
+			{
+				color = c_red;
+				color_accent = c_maroon;
+			}
+			else
+			{
+				color = c_white;
+				color_accent = c_gray;
+			}
 		}
 	}
 }

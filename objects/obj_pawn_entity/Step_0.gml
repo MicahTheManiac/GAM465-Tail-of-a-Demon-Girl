@@ -81,7 +81,7 @@ if (is_attacking) and (!is_dead) and (is_on_ground)
 	var _entity = collision_rectangle(x, y - (_h * 2), _ax, y + _h, obj_pawn_entity, false, true);
 	if (_entity) and (!do_attack_cooldown)
 	{
-		_entity.f_do_damage(other.damge_dealt);
+		_entity.f_do_damage(other.damage_dealt);
 	}
 	
 	if (!do_attack_animation)

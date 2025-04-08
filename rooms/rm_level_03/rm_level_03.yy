@@ -23,6 +23,7 @@
     {"name":"inst_6A21022B","path":"rooms/rm_level_03/rm_level_03.yy",},
     {"name":"inst_39490E44","path":"rooms/rm_level_03/rm_level_03.yy",},
     {"name":"inst_4927355D","path":"rooms/rm_level_03/rm_level_03.yy",},
+    {"name":"inst_13B7C02D","path":"rooms/rm_level_03/rm_level_03.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -31,6 +32,10 @@
         {"$GMRInstance":"v1","%Name":"inst_7E3D230C_5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E3D230C_5","objectId":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"propertyId":{"name":"level_name","path":"objects/obj_game_manager/obj_game_manager.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Level III\"",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_13B7C02D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13B7C02D","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"text","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"You can always use [↓] or [S] to pull crates towards you.\"",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"color","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_ltgray",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":408.0,},
       ],"layers":[],"name":"InstancesEngine","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"InstancesPlayer","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_D965F24_1_1_5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D965F24_1_1_5","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[
@@ -48,7 +53,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":288.0,},
         {"$GMRInstance":"v1","%Name":"inst_564187B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_564187B3","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"halign","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fa_right",},
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"color","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_black",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"color","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_ltgray",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"text","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Hold [R] to Restart Level. (if needed)\"",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_object","path":"objects/obj_text_object/obj_text_object.yy",},"propertyId":{"name":"valign","path":"objects/obj_text_object/obj_text_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fa_bottom",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":288.0,},

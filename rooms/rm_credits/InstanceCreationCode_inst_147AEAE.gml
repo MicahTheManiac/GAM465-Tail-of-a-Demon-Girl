@@ -1,5 +1,5 @@
 text =
-	"PROGRAMMING & DESIGN\n\n" +
+	"PROGRAMMING, DESIGN, & SOUND\n\n" +
 	"ARTWORK\n" +
 	"Demon Girl\n" +
 	"Necromancer\n" +

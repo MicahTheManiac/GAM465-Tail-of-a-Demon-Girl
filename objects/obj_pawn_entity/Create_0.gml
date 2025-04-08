@@ -21,9 +21,9 @@ sprites = [];
 health_current = 10;
 health_max = 10;
 attack_direction = 0;
-attack_range = 32;
+attack_range = 48;
 detect_range = 128;
-damge_dealt = 5;
+damage_dealt = 5;
 target = noone;
 
 timer_attack_frames = 0;
@@ -44,11 +44,11 @@ is_on_ground = false;
 is_dead = false;
 is_hit = false;
 
-function f_do_damage(_damge_dealt)
+function f_do_damage(_damage_dealt)
 {
 	if (!is_hit)
 	{
-		health_current -= _damge_dealt;
+		health_current -= _damage_dealt;
 		is_hit = true;
 	}
 }

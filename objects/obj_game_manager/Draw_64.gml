@@ -17,5 +17,6 @@ if (player != noone) and (player.allowed_deaths > -1)
 if (timer_ticks > 0)
 {
 	timer_ticks -= 1;
-	f_draw_text_font(global.window_width / 2, global.window_height / 2, text, 2, c_white, fa_middle, fa_center);
+	f_draw_text_font((global.window_width / 2) + 2, (global.window_height / 2) + 2, text, 2, color_accent, fa_middle, fa_center);
+	f_draw_text_font((global.window_width / 2), (global.window_height / 2), text, 2, color, fa_middle, fa_center);
 }

@@ -1,9 +1,10 @@
 event_inherited();
 
-var _entity = collision_circle(x, y + 4, 9, obj_pawn_entity, false, true);
-if (_entity) and (_entity.object_index != obj_scorpion)
+// Seem to have issues with allowing all entities, so only players, other entities can phase through.
+var _entity = collision_circle(x, y + 4, 9, obj_player, false, true);
+if (_entity)
 {
-	speed_x = _entity.speed_x * 1.2;
+	speed_x = _entity.speed_x * 0.5;
 }
 else
 {

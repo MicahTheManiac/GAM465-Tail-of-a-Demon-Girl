@@ -17,6 +17,10 @@ if (instance_exists(target))
 	camera_set_view_pos(VIEW, lerp(_cx, _x, 0.1), lerp(_cy, _y, 0.1))
 	
 }
+else if (instance_exists(obj_player))
+{
+	target = obj_player;
+}
 // Else Center Camera to Room
 else
 {

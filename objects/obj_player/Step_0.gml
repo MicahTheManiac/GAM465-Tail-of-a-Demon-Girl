@@ -8,6 +8,7 @@ var _key_atk_left = keyboard_check(ord("Q")) or keyboard_check(vk_left);
 var _key_atk_right = keyboard_check(ord("E")) or keyboard_check(vk_right);
 var _key_restart = keyboard_check(ord("R"));
 var _key_menu = keyboard_check(ord("M")) or keyboard_check(vk_escape);
+var _key_pull = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
 // Alternate Controls
 if (global.do_swap_controls)
@@ -42,6 +43,21 @@ else if (_key_menu) and (!_key_restart)
 else
 {
 	halo_alpha = 0;
+}
+
+// Pull Crates
+var _crate = collision_circle(x, y, 64, obj_crate, false, false);
+if (_key_pull) and (_crate)
+{
+	var _dir = point_direction(_crate.x, _crate.y, x, y);
+	if (_dir < 60) or (_dir > 300)
+	{
+		_crate.speed_x += 1;
+	}
+	else if (_dir < 210) and (_dir > 120)
+	{
+		_crate.speed_x -= 1;
+	}
 }
 
 // Calculate Movement

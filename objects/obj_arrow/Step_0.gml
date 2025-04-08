@@ -15,6 +15,13 @@ if (place_meeting(x + speed_x, y, _tl_main))
 	}
 	speed_x = 0;
 	speed_y = 0;
+	
+	// Destory if Fireball
+	if (object_index = obj_fireball)
+	{
+		instance_create_layer(x, y, "Instances", obj_smoke);
+		instance_destroy(id);
+	}
 }
 
 if (place_meeting(x, y + speed_y, _tl_main))
@@ -25,6 +32,13 @@ if (place_meeting(x, y + speed_y, _tl_main))
 	}
 	speed_x = 0;
 	speed_y = 0;
+	
+	// Destory if Fireball
+	if (object_index = obj_fireball)
+	{
+		instance_create_layer(x, y, "Instances", obj_smoke);
+		instance_destroy(id);
+	}
 }
 
 // If Outside Room

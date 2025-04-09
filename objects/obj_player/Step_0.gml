@@ -69,6 +69,7 @@ speed_x = _move_x * speed_move;
 if (is_on_ground) and (_key_up) and (!is_attacking)
 {
 	speed_y = -5.8;
+	audio_play_sound(snd_jump, 1, false);
 }
 
 // Attacking

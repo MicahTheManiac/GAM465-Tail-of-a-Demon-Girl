@@ -1,5 +1,5 @@
 text =
-	"Micah Thompson\n\n" +
+	"Micah Thompson ('jsfxr' for Sound, sfxr.me)\n\n" +
 	"\n" +
 	"Noiracide (Itch.io)\n" +
 	"CreativeKind (Itch.io)\n" +

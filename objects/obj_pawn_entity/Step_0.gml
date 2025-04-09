@@ -115,6 +115,7 @@ else if (!is_attacking)
 // If we are Hit
 if (is_hit)
 {
+	// Cooldown
 	timer_hit -= 1;
 	if (timer_hit <= 0) and (!do_hit_cooldown)
 	{
@@ -128,6 +129,17 @@ if (is_hit)
 		timer_hit = timer_hit_ticks;
 		is_hit = false;
 	}
+	
+	// Sound
+	if (!do_hit_sound)
+	{
+		do_hit_sound = true;
+		audio_play_sound(snd_hit, 1, false);
+	}
+}
+else
+{
+	do_hit_sound = false;
 }
 
 // Death

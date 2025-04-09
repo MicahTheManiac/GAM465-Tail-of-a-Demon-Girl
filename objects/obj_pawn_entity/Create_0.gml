@@ -37,6 +37,7 @@ timer_random = 0;
 do_attack_animation = false;
 do_attack_cooldown = false;
 do_hit_cooldown = false;
+do_hit_sound = false;
 do_entity_collision = true;
 is_implementing_ai = false;
 is_attacking = false;

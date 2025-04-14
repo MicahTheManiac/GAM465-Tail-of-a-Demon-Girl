@@ -15,8 +15,12 @@ Itch.io: https://micahthemaniac.itch.io/the-tail-of-a-demon-girl
 
 ---
 
-## Source Code Usage
+## Source Code & Assets Usage
 
 Feel free to use any source code. Feel free to make new content for the game such as new levels, objects, or new mechanics. Please do not use any assets outside the game. Please do not pass off any of my work as your own.
 
 This project was made in GameMaker using GML.
+
+## Paid-for & Downloaded Assets
+
+Assets that have been purchased or downloaded from Itch.io are not included in this repository. Most levels should be playble if they do not involve objects that require the excluded sprites. Placeholders are in place for some objects.

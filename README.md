@@ -24,3 +24,5 @@ This project was made in GameMaker using GML.
 ## Paid-for & Downloaded Assets
 
 Assets that have been purchased or downloaded from Itch.io are not included in this repository. Most levels should be playble if they do not involve objects that require the excluded sprites. Placeholders are in place for some objects.
+
+Silver is a font by Poppy Works and is licenened under [Creative Commons 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).

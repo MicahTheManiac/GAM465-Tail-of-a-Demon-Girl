@@ -116,8 +116,8 @@
   ],
   "name":"rm_level_03",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Sequence",
+    "path":"folders/Rooms/Sequence.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -1,1 +1,1 @@
-if (array_length(global.levels_complete) >= 7) instance_destroy(id);
+if (array_length(global.levels_complete) >= 4) instance_destroy(id);

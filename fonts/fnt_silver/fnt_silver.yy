@@ -163,10 +163,7 @@
   "sdfSpread":8,
   "size":28.0,
   "styleName":"Medium",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"C:\\Users\\mthom\\GameMakerProjects\\OrbitalEntropy\\fonts\\fnt_silver\\Silver.ttf",
   "usesSDF":false,
 }

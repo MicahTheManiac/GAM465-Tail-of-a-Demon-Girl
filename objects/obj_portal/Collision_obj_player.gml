@@ -39,7 +39,7 @@ else if (!f_room_check_ignored())
 }
 
 // Check if we are trying to enter Level 10
-if ((level_to_load == rm_level_10) and (array_length(global.levels_complete) < 4)) or ((level_to_load != rm_level_01) and (array_length(global.levels_complete) == 0))
+if ((level_to_load == rm_level_10) and (array_length(global.levels_complete) < 4)) or (((level_to_load != rm_level_01) and (level_to_load != rm_hub)) and (array_length(global.levels_complete) == 0))
 {
 	f_show_message("You haven't completed enough levels.", 4);
 }

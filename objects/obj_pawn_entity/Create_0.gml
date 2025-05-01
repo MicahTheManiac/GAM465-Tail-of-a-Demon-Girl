@@ -35,10 +35,10 @@ timer_random_ticks = irandom_range(100, 600);
 timer_random = 0;
 
 do_attack_animation = false;
-do_attack_cooldown = false;
 do_hit_cooldown = false;
 do_hit_sound = false;
 do_entity_collision = true;
+has_attempted_hit = false;
 is_implementing_ai = false;
 is_attacking = false;
 is_on_ground = false;
@@ -67,4 +67,12 @@ function f_ai_move(_x, _y)
 		speed_x = 0;
 	}
 	
+}
+
+function f_reset_attack()
+{
+	is_attacking = false;
+	do_attack_animation = false
+	has_attempted_hit = false
+	timer_attack = timer_attack_frames;
 }

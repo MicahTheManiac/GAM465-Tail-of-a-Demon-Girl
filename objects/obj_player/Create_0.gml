@@ -20,6 +20,7 @@ health_max = 20;
 
 var _frame_quotient = sprite_get_speed(spr_player_attack) div (sprite_get_number(spr_player_attack) - 1);
 timer_attack_frames = (game_get_speed(gamespeed_fps) div _frame_quotient);
+timer_attack = timer_attack_frames;
 timer_death_seconds_start = 3;
 timer_death_seconds = timer_death_seconds_start;
 timer_death_ticks = game_get_speed(gamespeed_fps);

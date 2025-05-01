@@ -22,7 +22,7 @@ if (is_on_ground)
 	}
 	
 	// If we are Attcking
-	if (is_attacking)
+	if (is_attacking) and (do_attack_animation)
 	{
 		sprite_index = spr_player_attack;
 		image_xscale = clamp(attack_direction, -1, 1);

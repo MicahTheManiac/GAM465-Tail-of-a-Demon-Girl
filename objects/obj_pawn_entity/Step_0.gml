@@ -67,49 +67,39 @@ if (y > room_height) and (!is_dead)
 	health_current = 0;
 }
 
-// Attacks
-if (is_attacking) and (!is_dead) and (is_on_ground)
+// Attacking
+if (is_attacking) and (is_on_ground) and (!is_dead)
 {
-	speed_x = 0;
+	// Decrease Timer
 	timer_attack -= 1;
 	
+	// Halt Speed
+	if (object_index != obj_player) speed_x = 0;
+	else speed_x = clamp(speed_x, -0.35, 0.35);
+	
+	// Get Attack Direction
 	var _atk_dir = (attack_direction * 90) - 90;
 	var _ax = x + lengthdir_x(attack_range * 1.2, _atk_dir);
-	var _ay = y + lengthdir_y(attack_range * 1.2, _atk_dir);
-	var _h = sprite_height / 2;
-	//	var _entity = collision_line(x, y, _ax, _ay, obj_pawn_entity, false, true);
-	var _entity = collision_rectangle(x, y - (_h * 2), _ax, y + _h, obj_pawn_entity, false, true);
-	if (_entity) and (!do_attack_cooldown)
+	
+	// Get Collision
+	var _entity = collision_rectangle(x, y - 24, _ax, y + 24, obj_pawn_entity, false, true);
+	if (_entity) and (!has_attempted_hit)
 	{
 		_entity.f_do_damage(other.damage_dealt);
 	}
 	
+	// We attempted a hit
+	if (!has_attempted_hit) has_attempted_hit = true;
+	
+	// Do Attack Animation
 	if (!do_attack_animation)
 	{
 		image_index = 0;
 		do_attack_animation = true;
 	}
 	
-	if (timer_attack <= 0)
-	{
-		is_attacking = false;
-		do_attack_animation = false;
-		do_attack_cooldown = f_swap_bool(do_attack_cooldown);
-		timer_attack = timer_attack_frames;
-	}
-}
-else if (is_attacking) and (is_dead)
-{
-	is_attacking = false;
-	do_attack_animation = false;
-	timer_attack = timer_attack_frames;
-}
-else if (!is_attacking)
-{
-	is_attacking = false;
-	do_attack_animation = false;
-	do_attack_cooldown = false;
-	timer_attack = timer_attack_frames;
+	// Reset
+	if (timer_attack <= 0) f_reset_attack();
 }
 
 // If we are Hit
@@ -134,7 +124,7 @@ if (is_hit)
 	if (!do_hit_sound)
 	{
 		do_hit_sound = true;
-		audio_play_sound(snd_hit, 1, false);
+		//audio_play_sound(snd_hit, 1, false);
 	}
 }
 else
@@ -147,6 +137,12 @@ if (is_implementing_ai) and (health_current == 0) and (!is_dead)
 {
 	// Switch State to Dead
 	state = AI_STATE.DIE;
+	
+	// Reset Attack
+	f_reset_attack();
+	
+	// We are Dead
+	is_dead = true;
 }
 
 // Apply Movement

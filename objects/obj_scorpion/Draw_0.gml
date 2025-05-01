@@ -35,7 +35,7 @@ if (speed_x == 0)
 }
 
 // If we are Attcking
-if (is_attacking) and (!do_attack_cooldown)
+if (is_attacking)
 {
 	sprite_index = _attk;
 	if (point_direction(x, y, target.x, target.y) > 90) and (point_direction(x, y, target.x, target.y) < 270)

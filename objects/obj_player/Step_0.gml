@@ -10,6 +10,16 @@ var _key_restart = keyboard_check(ord("R"));
 var _key_menu = keyboard_check(ord("M")) or keyboard_check(vk_escape);
 var _key_pull = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
+// Dev Mode
+if (DEV_MODE) and (keyboard_check_pressed(vk_f5))
+{
+	room_goto(rm_dev);
+}
+else if (DEV_MODE) and (keyboard_check_pressed(vk_f6))
+{
+	room_goto_next();
+}
+
 // Alternate Controls
 if (global.do_swap_controls)
 {
@@ -19,6 +29,7 @@ if (global.do_swap_controls)
 	_key_atk_right = keyboard_check(ord("D"));
 }
 
+// Restarting Level
 if (_key_restart) and (!_key_menu)
 {
 	halo_alpha++;
@@ -30,6 +41,7 @@ if (_key_restart) and (!_key_menu)
 		room_restart();
 	}
 }
+// Returning to Hub
 else if (_key_menu) and (!_key_restart)
 {
 	halo_alpha++;
@@ -69,7 +81,7 @@ speed_x = _move_x * speed_move;
 if (is_on_ground) and (_key_up) and (!is_attacking)
 {
 	speed_y = -5.8;
-	audio_play_sound(snd_jump, 1, false);
+	//audio_play_sound(snd_jump, 1, false);
 }
 
 // Attacking
@@ -94,8 +106,8 @@ if (is_dead)
 	speed_x = 0;
 	speed_y = 0;
 	
-	// Prevent Restart or Exit
-	//halo_alpha = 0;
+	// Reset Attack
+	f_reset_attack();
 	
 	// Countdown Death Timer
 	timer_death_ticks -= 1;

@@ -9,9 +9,9 @@ health_current = health_max;
 attack_range = 48;
 detect_range = 256;
 
-damage_dealt = 10;
+damage_dealt = 8;
 
-timer_attack_frames = 30;
+timer_attack_frames = 75;
 target = obj_player;
 
 do_entity_collision = false;

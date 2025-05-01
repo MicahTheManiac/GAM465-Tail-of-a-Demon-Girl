@@ -13,6 +13,8 @@ global.window_height = 0;
 global.do_swap_controls = false;
 global.levels_complete = [];
 
+//	rm_level_01, rm_level_02, rm_level_03, rm_level_04, rm_level_05, rm_level_06, rm_level_07
+
 // Font Func
 function f_draw_text_font(x, y, _text, _size = 1, _color = c_white, _valign = fa_top, _halign = fa_left, _font = fnt_silver){
 	// Set Values
@@ -38,19 +40,6 @@ function f_swap_bool(_bool)
 {
 	if !_bool return true;
 	if _bool return false;
-}
-
-// Button Test
-function f_button_test()
-{
-	show_debug_message(" > Button Working")
-}
-
-// Swap Controls
-function f_button_swap_keys()
-{
-	global.do_swap_controls = f_swap_bool(global.do_swap_controls);
-	room_restart();
 }
 
 // Check Deaths

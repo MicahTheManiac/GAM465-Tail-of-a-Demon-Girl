@@ -3,6 +3,7 @@ text = "";
 timer_ticks = 0;
 color = c_red;
 color_accent = c_maroon;
+coins = 0;
 
 // Set Cursor
 if (room == rm_credits) or (room == rm_hub)

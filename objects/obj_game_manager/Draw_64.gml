@@ -4,7 +4,9 @@ f_draw_text_font(global.window_width / 2, global.window_height - (2 * FONT_HEIGH
 // Coins
 if (do_count_coins)
 {
-	f_draw_text_font(30, 21, $"\n\nHeart Coins: {coins} out of 3");
+	var _string = $"Heart Coins: {coins} out of 3";
+	var _str_len = string_width(_string)
+	f_draw_text_font(global.window_width - _str_len - 30, 21, _string);
 }
 
 // Draw Message

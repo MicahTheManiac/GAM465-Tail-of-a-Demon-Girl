@@ -61,6 +61,7 @@
     {"name":"rm_level_08","order":7,"path":"rooms/rm_level_08/rm_level_08.yy",},
     {"name":"rm_level_09","order":8,"path":"rooms/rm_level_09/rm_level_09.yy",},
     {"name":"rm_level_10","order":9,"path":"rooms/rm_level_10/rm_level_10.yy",},
+    {"name":"rm_level_e02","order":1,"path":"rooms/rm_level_e02/rm_level_e02.yy",},
     {"name":"rm_template","order":2,"path":"rooms/rm_template/rm_template.yy",},
     {"name":"rm_title","order":3,"path":"rooms/rm_title/rm_title.yy",},
     {"name":"AIBehavior","order":1,"path":"scripts/AIBehavior/AIBehavior.yy",},

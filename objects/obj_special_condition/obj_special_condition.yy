@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_corpse",
+  "%Name":"obj_special_condition",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_corpse",
+  "name":"obj_special_condition",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gameobjects",
-    "path":"folders/Objects/Gameobjects.yy",
+    "name":"Engine",
+    "path":"folders/Objects/Engine.yy",
   },
-  "parentObjectId":{
-    "name":"obj_pawn_entity",
-    "path":"objects/obj_pawn_entity/obj_pawn_entity.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_dead",
-    "path":"sprites/spr_player_dead/spr_player_dead.yy",
+    "name":"spr_ui_meter",
+    "path":"sprites/spr_ui_meter/spr_ui_meter.yy",
   },
   "spriteMaskId":null,
   "visible":true,

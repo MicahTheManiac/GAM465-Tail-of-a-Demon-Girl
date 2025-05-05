@@ -12,5 +12,5 @@ if (is_pressed) and (frequency >= 0)
 	_subimage = 2;
 }
 
-draw_sprite_ext(spr_button, _subimage, x, y, 1, 1, 0, _color, 1);
+draw_sprite_ext(spr_button, _subimage, x, y, 1, 1, image_angle, _color, 1);
 draw_sprite(spr_button, 3 + _freq, x, y);

@@ -9,7 +9,7 @@ University of Advancing Technology
 
 GAM465 is a course where every week students are tasked to create a game. A sort of game jam course.
 
-Project Board: *no board yet*
+Project Board: https://mthompson84877.weebly.com/gam465-game-a-week.html
 
 Itch.io: https://micahthemaniac.itch.io/the-tail-of-a-demon-girl
 

@@ -98,6 +98,7 @@
     {"id":{"name":"Buttons","path":"scripts/Buttons/Buttons.yy",},},
     {"id":{"name":"Library","path":"scripts/Library/Library.yy",},},
     {"id":{"name":"Wave","path":"scripts/Wave/Wave.yy",},},
+    {"id":{"name":"snd_coin","path":"sounds/snd_coin/snd_coin.yy",},},
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},},
     {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},

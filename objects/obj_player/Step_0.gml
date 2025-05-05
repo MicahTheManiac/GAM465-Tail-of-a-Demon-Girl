@@ -78,10 +78,11 @@ var _attack = _key_atk_right - _key_atk_left;
 speed_x = _move_x * speed_move;
 
 // Check if we are on ground before Jump
-if (is_on_ground) and (_key_up) and (!is_attacking)
+if (is_on_ground) and (_key_up) and (!is_attacking) and (!is_dead)
 {
 	speed_y = -5.8;
-	//audio_play_sound(snd_jump, 1, false);
+	if (!audio_is_playing(snd_jump)) audio_play_sound(snd_jump, 1, false, 0.5);
+	
 }
 
 // Attacking

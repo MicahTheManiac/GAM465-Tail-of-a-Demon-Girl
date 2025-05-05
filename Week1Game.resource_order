@@ -70,6 +70,7 @@
     {"name":"AIBehavior","order":1,"path":"scripts/AIBehavior/AIBehavior.yy",},
     {"name":"Buttons","order":3,"path":"scripts/Buttons/Buttons.yy",},
     {"name":"Wave","order":2,"path":"scripts/Wave/Wave.yy",},
+    {"name":"snd_coin","order":2,"path":"sounds/snd_coin/snd_coin.yy",},
     {"name":"snd_hit","order":1,"path":"sounds/snd_hit/snd_hit.yy",},
     {"name":"spr_arrow","order":4,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_bg","order":8,"path":"sprites/spr_bg/spr_bg.yy",},

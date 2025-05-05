@@ -124,7 +124,7 @@ if (is_hit)
 	if (!do_hit_sound)
 	{
 		do_hit_sound = true;
-		//audio_play_sound(snd_hit, 1, false);
+		if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 1, false, 0.5);
 	}
 }
 else

@@ -10,4 +10,5 @@ with(obj_game_manager)
 	coins += 1;
 }
 
+audio_play_sound(snd_coin, 1, false, 0.5);
 instance_destroy(id);
